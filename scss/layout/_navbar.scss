@@ -3,15 +3,15 @@
 @use "../abstract/variables" as *;
 
 .page-nav {
-  width: 80%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: $background-clr;
   line-height: 4em;
-  margin: 0 auto;
 }
 
 .nav-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 

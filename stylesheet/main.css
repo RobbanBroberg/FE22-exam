@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* || Styling the header block */
+/* || Header content, The main content of the header */
 .header-content {
   background-color: #c7ddea;
   padding: 1em 1em 0 1em;
@@ -17,6 +18,7 @@
   font-size: 4rem;
   font-weight: 900;
   margin: 1em 0 0.5em 0;
+  color: #000;
 }
 
 .header-image {
@@ -27,17 +29,40 @@
   right: 0;
 }
 
+/* || The side elements of the header */
+.sides-content {
+  padding: 12em 5em;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.sides-content_red {
+  background-color: #f17949;
+}
+
+.sides-content_orange {
+  background-color: #fab131;
+}
+
+.sides-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0.3em;
+}
+
 /* || Styling the navigation bar */
 .page-nav {
-  width: 80%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #e9e9e9;
   line-height: 4em;
-  margin: 0 auto;
 }
 
 .nav-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -64,6 +89,7 @@
 }
 
 /* || Styling the buttons */
+/* || Join button */
 .join-btn {
   padding: 1.4em 4.5em;
   background-color: #fff;
@@ -82,4 +108,6 @@
 body {
   background-color: #e9e9e9;
   font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  color: #404040;
 }/*# sourceMappingURL=main.css.map */

@@ -2,6 +2,8 @@
 
 @use "../abstract/variables" as *;
 
+/* || Header content, The main content of the header */
+
 .header-content {
   background-color: $bluecard-clr;
   padding: 1em 1em 0 1em;
@@ -18,6 +20,7 @@
   font-size: 4rem;
   font-weight: 900;
   margin: 1em 0 0.5em 0;
+  color: #000;
 }
 .header-image {
   /* TODO: Bildens position ska vara i botten till höger i rutan. Nedan verkar inte fungera. */
@@ -25,4 +28,26 @@
   position: relative;
   bottom: 0;
   right: 0;
+}
+
+/* || The side elements of the header */
+
+.sides-content {
+  padding: 12em 5em;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.sides-content_red {
+  background-color: $redcard-clr;
+}
+.sides-content_orange {
+  background-color: $orangecard-clr;
+}
+.sides-title {
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0.3em;
 }
