@@ -1,1 +1,12 @@
-@use "abstract/variables" as *;
+/* || Styling the header block */
+
+@use "../abstract/variables" as *;
+
+.header-content {
+  background-color: $bluecard-clr;
+}
+.header-title {
+  font-family: $font-title;
+  font-size: 4rem;
+  font-weight: 900;
+}

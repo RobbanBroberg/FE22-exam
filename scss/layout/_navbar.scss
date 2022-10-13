@@ -11,16 +11,26 @@
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .list-item {
-  flex: 1 1 25%;
+  flex: 1 1 40%;
   text-align: center;
   &:hover {
     background-color: $main-background-clr;
+    .list-link {
+      color: #202020;
+    }
   }
 }
 .list-link {
   text-decoration: none;
+  font-family: $font-text;
+  font-weight: 600;
+  color: $greycard-clr;
+}
+.link-active {
+  color: #202020;
 }

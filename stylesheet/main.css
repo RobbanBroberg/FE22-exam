@@ -1,3 +1,14 @@
+/* || Styling the header block */
+.header-content {
+  background-color: #c7ddea;
+}
+
+.header-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
 /* || Styling the navigation bar */
 .page-nav {
   width: 80%;
@@ -8,19 +19,30 @@
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .list-item {
-  flex: 1 1 25%;
+  flex: 1 1 40%;
   text-align: center;
 }
 .list-item:hover {
   background-color: #a9a19e;
 }
+.list-item:hover .list-link {
+  color: #202020;
+}
 
 .list-link {
   text-decoration: none;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  color: #a9a19e;
+}
+
+.link-active {
+  color: #202020;
 }
 
 body {

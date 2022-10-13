@@ -1,4 +1,7 @@
 @use "abstract/variables" as *;
+
+@use "layout/header";
+
 @use "layout/navbar";
 
 body {
