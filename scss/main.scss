@@ -1,0 +1,6 @@
+@use "abstract/variables" as *;
+@use "layout/navbar";
+
+body {
+  background-color: $background-clr;
+}
