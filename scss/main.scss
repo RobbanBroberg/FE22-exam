@@ -4,9 +4,12 @@
 
 @use "layout/navbar";
 
+@use "layout/footer";
+
 @use "components/buttons";
 
 @use "components/product-card";
+
 body {
   background-color: $background-clr;
   font-family: $font-text;
