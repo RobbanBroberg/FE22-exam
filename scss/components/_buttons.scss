@@ -1,3 +1,19 @@
 /* || Styling the buttons */
 
 @use "../abstract/variables" as *;
+
+.join-btn {
+  padding: 1.4em 4.5em;
+  background-color: #fff;
+  border-radius: 999px;
+  border-style: none;
+  box-shadow: 0 1px 2px $contact-background-clr;
+  font-family: $font-text;
+  font-weight: 600;
+  font-size: 0.7rem;
+
+  &:hover {
+    background-color: $greycard-clr;
+    color: #fff;
+  }
+}

@@ -4,6 +4,9 @@
 
 @use "layout/navbar";
 
+@use "components/buttons";
+
 body {
   background-color: $background-clr;
+  font-family: $font-text;
 }
