@@ -1,9 +1,12 @@
+/* || Styling the navigation bar */
+
 @use "../abstract/variables" as *;
-// TODO: Fixa så att länkingen till variabler fungerar
+
 .page-nav {
   width: 80%;
   background-color: $background-clr;
   line-height: 4em;
+  margin: 0 auto;
 }
 
 .nav-list {
@@ -14,6 +17,9 @@
 .list-item {
   flex: 1 1 25%;
   text-align: center;
+  &:hover {
+    background-color: $main-background-clr;
+  }
 }
 .list-link {
   text-decoration: none;
