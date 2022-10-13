@@ -96,6 +96,39 @@
   color: #202020;
 }
 
+/* Styling of the main content of the page */
+/* the main content*/
+.page-content-main {
+  background-color: #a9a19e;
+  padding: 1em 1em 4em 1em;
+}
+.page-content-main .join-btn {
+  display: none;
+}
+.page-content-main p {
+  line-height: 1.5em;
+  font-size: 1.1rem;
+}
+
+.about-title,
+.main-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 0.5em 0;
+}
+
+.page-content-about {
+  background-color: #fab131;
+  padding: 1em 2em 4em 2em;
+  text-align: center;
+}
+.page-content-about p {
+  line-height: 1.5em;
+  font-size: 1.1rem;
+  padding: 1em;
+}
+
 /* Styling of the footer*/
 .page-footer {
   width: 100%;

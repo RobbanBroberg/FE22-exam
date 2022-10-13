@@ -1,0 +1,36 @@
+/* Styling of the main content of the page */
+
+@use "../abstract/variables" as *;
+
+/* the main content*/
+
+.page-content-main {
+  background-color: $greycard-clr;
+  padding: 1em 1em 4em 1em;
+  .join-btn {
+    display: none;
+  }
+  p {
+    line-height: 1.5em;
+    font-size: 1.1rem;
+  }
+}
+.about-title,
+.main-title {
+  font-family: $font-title;
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 0.5em 0;
+}
+
+.page-content-about {
+  background-color: $orangecard-clr;
+  padding: 1em 2em 4em 2em;
+  text-align: center;
+
+  p {
+    line-height: 1.5em;
+    font-size: 1.1rem;
+    padding: 1em;
+  }
+}
