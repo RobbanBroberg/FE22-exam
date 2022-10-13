@@ -1,0 +1,39 @@
+/* The styling of the product cards in the main article */
+
+@use "../abstract/variables" as *;
+
+.product-wrapper {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.product-card {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  //  TODO: Kolla bakgrundsfärgen om den ska vara en svag grå snarare?
+
+  border-radius: 0.5em;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+.product-title {
+  font-family: $font-title;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+  padding: 1em;
+}
+
+.product-description {
+  font-size: 0.8rem;
+  color: $greycard-clr;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}

@@ -15,6 +15,12 @@
     margin-bottom: 3em;
   }
 }
+.header-content_highlight {
+  color: #fff;
+  &::before {
+    content: "$";
+  }
+}
 .header-title {
   font-family: $font-title;
   font-size: 4rem;
