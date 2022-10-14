@@ -2,6 +2,8 @@
 /* || Styling the header block */
 /* || Header content, The main content of the header */
 .header-content {
+  display: flex;
+  flex-direction: column;
   background-color: #c7ddea;
   padding: 1em 1em 0 1em;
   position: relative;
@@ -28,12 +30,14 @@
   color: #000;
 }
 
+.join-btn {
+  align-self: flex-start;
+}
+
 .header-image {
+  align-self: flex-end;
   /* TODO: Bildens position ska vara i botten till höger i rutan. Nedan verkar inte fungera. */
-  max-width: 400px;
-  position: relative;
-  bottom: 0;
-  right: 0;
+  max-width: 100%;
 }
 
 /* || The side elements of the header */
@@ -110,6 +114,7 @@
   font-size: 1.1rem;
 }
 
+.steps-title,
 .about-title,
 .main-title {
   font-family: "Frank Ruhl Libre", serif;
@@ -127,6 +132,50 @@
   line-height: 1.5em;
   font-size: 1.1rem;
   padding: 1em;
+}
+
+/* Steps */
+.steps-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+
+.steps-item {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  padding-bottom: 3em;
+  border: 1px solid black; /* TODO: border for Debug, remove when done*/
+  /* Changes background color of the first list item (step-title) to blue*/
+  /* Changes the backgrpundcolor of 3rd list item (step 02) to same as page background*/
+  /* Changes the backgroundcolor of the 5th list item (step 04) to red*/
+}
+.steps-item:nth-of-type(1) {
+  background-color: #c7ddea;
+}
+.steps-item:nth-of-type(3) {
+  background-color: #a9a19e;
+}
+.steps-item:nth-of-type(5) {
+  background-color: #f17949;
+}
+
+.steps-title {
+  color: #303031;
+  margin: 0;
+}
+
+.steps-counter {
+  align-self: flex-start;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #a9a19e;
 }
 
 /* Styling of the footer*/
@@ -180,7 +229,7 @@
 
 /* The styling of the product cards in the main article */
 .product-wrapper {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -216,17 +265,20 @@
 }
 
 .product-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
   top: -3em;
   width: 95%;
   max-height: 40%;
-  overflow: hidden;
   border-radius: 0.5em;
 }
 
 .product-image {
-  width: 40%;
-  margin: 2em;
+  max-width: 60%;
+  margin-top: 2em;
 }
 
 .product-image-container_blue {
@@ -246,4 +298,15 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
   color: #303031;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header,
+.page-nav,
+.page-wrapper,
+.page-footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
 }/*# sourceMappingURL=main.css.map */

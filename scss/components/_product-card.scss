@@ -3,7 +3,7 @@
 @use "../abstract/variables" as *;
 
 .product-wrapper {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -42,18 +42,22 @@
   margin-bottom: 2em;
 }
 .product-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
   top: -3em;
   width: 95%;
   max-height: 40%;
-  overflow: hidden;
+  // overflow: hidden;
 
   border-radius: 0.5em;
 }
 
 .product-image {
-  width: 40%;
-  margin: 2em;
+  max-width: 60%;
+  margin-top: 2em;
 }
 .product-image-container_blue {
   background-color: $bluecard-clr;
