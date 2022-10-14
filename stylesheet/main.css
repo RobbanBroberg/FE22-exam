@@ -1,5 +1,16 @@
 @charset "UTF-8";
 /* || Styling the header block */
+/* Flexing the 2 blocks in the header */
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-content,
+.header-sides {
+  flex: 1 1 500px;
+}
+
 /* || Header content, The main content of the header */
 .header-content {
   display: flex;
@@ -8,7 +19,8 @@
   padding: 1em 1em 0 1em;
   position: relative;
 }
-.header-content p {
+
+.header-text {
   line-height: 1.5em;
   font-weight: 600;
   color: #303031;
@@ -109,7 +121,8 @@
 .page-content-main .join-btn {
   display: none;
 }
-.page-content-main p {
+
+.main-text {
   line-height: 1.5em;
   font-size: 1.1rem;
 }
