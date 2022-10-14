@@ -29,12 +29,35 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .page-header,
-  .page-nav,
-  .page-wrapper,
-  .page-footer {
-    width: 80%;
+
+  body {
     margin: 0 auto;
-    position: relative;
+    width: 80%;
+  }
+
+  .contact-page__header {
+    width: 100%;
+    display: flex;
+  }
+
+  .contact-page__figure-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .contact-page__h2 {
+    position: static;
+    text-align: center;
+    flex: 0 1 70%;
+  }
+
+  .contact-page__footer {
+    width: 100%;
+  }
+
+  .contact-page__footer img {
+    width: 30%;
   }
 }
