@@ -24,8 +24,19 @@ body {
   .page-nav,
   .page-wrapper,
   .page-footer {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     position: relative;
+  }
+
+  .page-content-main {
+    .join-btn {
+      display: inline-block;
+    }
+  }
+
+  .about-text {
+    width: 50%;
+    margin: 0 auto;
   }
 }

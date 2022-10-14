@@ -10,11 +10,13 @@
   .join-btn {
     display: none;
   }
-  p {
-    line-height: 1.5em;
-    font-size: 1.1rem;
-  }
 }
+
+.main-text {
+  line-height: 1.5em;
+  font-size: 1.1rem;
+}
+
 .steps-title,
 .about-title,
 .main-title {
@@ -28,12 +30,11 @@
   background-color: $orangecard-clr;
   padding: 1em 2em 4em 2em;
   text-align: center;
-
-  p {
-    line-height: 1.5em;
-    font-size: 1.1rem;
-    padding: 1em;
-  }
+}
+.about-text {
+  line-height: 1.5em;
+  font-size: 1.1rem;
+  padding: 1em;
 }
 
 /* Steps */
@@ -52,11 +53,12 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
   border: 1px solid black; /* TODO: border for Debug, remove when done*/
 
   &:nth-of-type(1) {
     background-color: $bluecard-clr;
+    padding: 2em 1em;
   } /* Changes background color of the first list item (step-title) to blue*/
 
   &:nth-of-type(3) {
@@ -79,5 +81,5 @@
   font-weight: 700;
   font-size: 2.5rem;
   color: $greycard-clr;
-  // padding: 0.3em;
+  padding-bottom: 0.3em;
 }

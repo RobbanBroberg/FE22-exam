@@ -1,5 +1,16 @@
 @charset "UTF-8";
 /* || Styling the header block */
+/* Flexing the 2 blocks in the header */
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-content,
+.header-sides {
+  flex: 1 1 500px;
+}
+
 /* || Header content, The main content of the header */
 .header-content {
   display: flex;
@@ -8,7 +19,8 @@
   padding: 1em 1em 0 1em;
   position: relative;
 }
-.header-content p {
+
+.header-text {
   line-height: 1.5em;
   font-weight: 600;
   color: #303031;
@@ -109,7 +121,8 @@
 .page-content-main .join-btn {
   display: none;
 }
-.page-content-main p {
+
+.main-text {
   line-height: 1.5em;
   font-size: 1.1rem;
 }
@@ -128,7 +141,8 @@
   padding: 1em 2em 4em 2em;
   text-align: center;
 }
-.page-content-about p {
+
+.about-text {
   line-height: 1.5em;
   font-size: 1.1rem;
   padding: 1em;
@@ -149,7 +163,7 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
   border: 1px solid black; /* TODO: border for Debug, remove when done*/
   /* Changes background color of the first list item (step-title) to blue*/
   /* Changes the backgrpundcolor of 3rd list item (step 02) to same as page background*/
@@ -157,6 +171,7 @@
 }
 .steps-item:nth-of-type(1) {
   background-color: #c7ddea;
+  padding: 2em 1em;
 }
 .steps-item:nth-of-type(3) {
   background-color: #e9e9e9;
@@ -176,6 +191,7 @@
   font-weight: 700;
   font-size: 2.5rem;
   color: #a9a19e;
+  padding-bottom: 0.3em;
 }
 
 /* Styling of the footer*/
@@ -229,7 +245,7 @@
 
 /* The styling of the product cards in the main article */
 .product-wrapper {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -305,8 +321,15 @@ body {
 .page-nav,
 .page-wrapper,
 .page-footer {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     position: relative;
+  }
+  .page-content-main .join-btn {
+    display: inline-block;
+  }
+  .about-text {
+    width: 50%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */
