@@ -42,6 +42,9 @@
   background-color: #ececec;
   color: #979696;
 }
+.contact-page__nav-container .contact-page__list-item:hover {
+  background-color: #a9a19e;
+}
 .contact-page__nav-container .active {
   color: #383838;
   background-color: #dddbdb;
@@ -175,4 +178,15 @@ body a:link {
 body a:visited {
   text-decoration: none;
   color: #808080;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header,
+.page-nav,
+.page-wrapper,
+.page-footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
 }/*# sourceMappingURL=contact.css.map */

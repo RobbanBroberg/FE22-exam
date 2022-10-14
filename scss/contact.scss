@@ -27,3 +27,14 @@ body {
     color: #808080;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .page-header,
+  .page-nav,
+  .page-wrapper,
+  .page-footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+}

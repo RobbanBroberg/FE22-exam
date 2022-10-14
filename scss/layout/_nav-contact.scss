@@ -22,6 +22,10 @@
     color: #979696;
   }
 
+  .contact-page__list-item:hover {
+    background-color: $greycard-clr;
+  }
+
   .active {
     color: #383838;
     background-color: #dddbdb;
