@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <title>&#128383; Contact Us!</title>
+    <title>&#128383; What's on your mind?</title>
   </head>
   <body>
     <header class="contact-page__header">
@@ -33,16 +33,14 @@
         <ul class="contact-page__nav-list">
           <li class="contact-page__list-item"><a href="index.html" class="contact-page__list-link">Home</a></li>
           <li class="contact-page__list-item"><a href="#" class="contact-page__list-link">Our offer</a></li>
-        </ul>
-        <ul class="contact-page__nav-list">
           <li class="contact-page__list-item"><a href="#" class="contact-page__list-link">Why us</a></li>
-          <li class="contact-page__list-item"><a href="#" class="contact-page__list-link--active">Contact</a></li>
+          <li class="contact-page__list-item active"><a href="#" class="contact-page__list-link active">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="contact-page__main">
-      <article class="contact-page__form-container">
         <h1 class="contact-page__h1">What's on your mind?</h1>
+      <article class="contact-page__form-container">
         <form class="contact-page__form">
           <label class="contact-page__label" for="email">Your email</label>
           <input class="contact-page__input-email" type="email" name="email-input" id="email" />
@@ -53,16 +51,19 @@
             cols="30"
             rows="10"
             placeholder="Dear insurance company..."></textarea>
-            <button type="submit">SEND MESSAGE</button>
+            <button class="contact-page__btn" type="submit">SEND MESSAGE</button>
         </form>
       </article>
     </main>
     <footer class="contact-page__footer">
-      <section class="contact-page__footer-container">
-        <h2 class="contact-page__h2">Come visit us!</h2>
-        <p class="contact-page__txt">2219 Griffin Street</p>
-        <p class="contact-page__txt">San Francisco</p>
-      </section>
+      <address class="contact-page__address-container">
+        <section class="contact-page__address-info">
+          <h3 class="contact-page__h3">Come visit us!</h3>
+          <p class="contact-page__txt">2219 Griffin Street</p>
+          <p class="contact-page__txt">San Francisco</p>
+        </section>
+      </address>
+      <img src="assets/SanFranMap.png" alt="">
     </footer>
   </body>
 </html>

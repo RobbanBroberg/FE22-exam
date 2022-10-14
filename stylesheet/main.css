@@ -206,6 +206,7 @@
 
 /* || Styling the buttons */
 /* || Join button */
+.contact-page__btn,
 .join-btn {
   padding: 1.4em 4.5em;
   background-color: #fff;
@@ -216,9 +217,14 @@
   font-weight: 600;
   font-size: 0.7rem;
 }
+.contact-page__btn:hover,
 .join-btn:hover {
   background-color: #a9a19e;
   color: #fff;
+}
+
+.contact-page__btn {
+  padding: 1.3em 2.7em;
 }
 
 /* The styling of the product cards in the main article */
