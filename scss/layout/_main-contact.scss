@@ -1,0 +1,62 @@
+@use "../abstract/variables" as *;
+
+@use "../components/buttons";
+
+.contact-page__main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $greycard-clr;
+  color: #fafafa;
+
+  .contact-page__h1 {
+    width: 90%;
+    margin: 0.5em 0 0.5em 0.6em;
+    font-family: $font-title;
+    font-size: 2.5rem;
+    font-weight: $font-title--xbold;
+  }
+
+  .contact-page__form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-page__form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-page__input-email {
+    width: 95%;
+    padding: 0.5em;
+  }
+
+  .contact-page__textarea {
+    width: 95%;
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .contact-page__textarea::placeholder {
+    font-family: $font-text;
+    font-size: $font-text--size;
+    color: black;
+  }
+
+  .contact-page__label {
+    align-self: flex-start;
+    padding: 0.5em;
+    margin-left: 0.8em;
+  }
+
+  .contact-page__btn {
+    align-self: flex-end;
+  }
+
+}
+

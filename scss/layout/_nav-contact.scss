@@ -1,0 +1,29 @@
+@use "../abstract/variables" as *;
+
+.contact-page__nav-container {
+  width: 100%;
+  margin-top: -.5em;
+  display: flex;
+  text-align: center;
+
+
+  .contact-page__nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .contact-page__list-item {
+    padding: 2em 2em;
+    flex: 1 0 100px;
+    background-color: #ececec;
+    color: #979696;
+  }
+
+  .active {
+    color: #383838;
+    background-color: #dddbdb;
+  }
+}

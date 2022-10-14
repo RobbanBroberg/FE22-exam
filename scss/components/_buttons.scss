@@ -3,7 +3,7 @@
 @use "../abstract/variables" as *;
 
 /* || Join button */
-
+.contact-page__btn,
 .join-btn {
   padding: 1.4em 4.5em;
   background-color: #fff;
@@ -18,4 +18,8 @@
     background-color: $greycard-clr;
     color: #fff;
   }
+}
+
+.contact-page__btn {
+  padding: 1.3em 2.7em;
 }
