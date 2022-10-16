@@ -44,19 +44,36 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    
   }
 
   .contact-page__h2 {
     position: static;
     text-align: center;
-    flex: 0 1 70%;
+    flex: 0 1 50%;
+  }
+
+  .contact-page__nav-list {
+    display: flex;
+    background-color: #ececec;
+  }
+
+  .contact-page__list-item:nth-child(4) {
+    background-color: #ececec;
+  }
+
+  .contact-page__list-item:nth-child(1),
+  .contact-page__list-item:nth-child(2),
+  .contact-page__list-item:nth-child(3),
+  .contact-page__list-item:nth-child(4) {
+    flex: 0 1 10%;
+    margin-left: -21em;
+    margin-right: -21em;
   }
 
   .contact-page__main {
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    height: 80vh;
     align-items:flex-start
   }
 
@@ -87,7 +104,7 @@ body {
     width: 26%;
     position: absolute;
     margin-left: 5em;
-    margin-top: -15em;
+    margin-top: -46em;
   }
 
   .contact-page__h3 {
