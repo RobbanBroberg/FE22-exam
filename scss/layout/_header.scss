@@ -6,19 +6,21 @@
 
 .page-header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  // flex-wrap: wrap;
 }
 
-.header-content,
-.header-sides {
-  flex: 1 1 500px;
-}
+// .header-content,
+// .header-sides {
+//   flex: 1 1 100%;
+// }
 
 /* || Header content, The main content of the header */
 
 .header-content {
   display: flex;
   flex-direction: column;
+  // align-items: center;
   background-color: $bluecard-clr;
   padding: 1em 1em 0 1em;
   position: relative;
@@ -32,16 +34,19 @@
 
 .header-content_highlight {
   color: #fff;
+  text-shadow: 0.5px 0.5px black;
   &::before {
     content: "$";
   }
 }
 .header-title {
+  display: inline-block;
   font-family: $font-title;
-  font-size: 4rem;
+  font-size: 2.6rem;
   font-weight: 900;
   margin: 1em 0 0.5em 0;
   color: #000;
+  max-width: 80%;
 }
 
 .join-btn {
@@ -50,7 +55,7 @@
 .header-image {
   align-self: flex-end;
   /* TODO: Bildens position ska vara i botten till höger i rutan. Nedan verkar inte fungera. */
-  max-width: 100%;
+  max-width: 95%;
   // position: absolute;
   // bottom: 0;
   // right: 0;
@@ -73,7 +78,7 @@
 .sides-title {
   font-family: $font-title;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
   padding: 0.3em;
 }

@@ -3,12 +3,7 @@
 /* Flexing the 2 blocks in the header */
 .page-header {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.header-content,
-.header-sides {
-  flex: 1 1 500px;
+  flex-direction: column;
 }
 
 /* || Header content, The main content of the header */
@@ -29,17 +24,20 @@
 
 .header-content_highlight {
   color: #fff;
+  text-shadow: 0.5px 0.5px black;
 }
 .header-content_highlight::before {
   content: "$";
 }
 
 .header-title {
+  display: inline-block;
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 4rem;
+  font-size: 2.6rem;
   font-weight: 900;
   margin: 1em 0 0.5em 0;
   color: #000;
+  max-width: 80%;
 }
 
 .join-btn {
@@ -49,7 +47,7 @@
 .header-image {
   align-self: flex-end;
   /* TODO: Bildens position ska vara i botten till höger i rutan. Nedan verkar inte fungera. */
-  max-width: 100%;
+  max-width: 95%;
 }
 
 /* || The side elements of the header */
@@ -70,7 +68,7 @@
 .sides-title {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
   padding: 0.3em;
 }
@@ -117,6 +115,7 @@
 .page-content-main {
   background-color: #a9a19e;
   padding: 1em 1em 4em 1em;
+  position: relative;
 }
 .page-content-main .join-btn {
   display: none;
@@ -131,7 +130,7 @@
 .about-title,
 .main-title {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #fff;
   margin: 0.5em 0;
 }
@@ -164,7 +163,6 @@
   align-items: center;
   padding: 1em;
   padding-bottom: 5em;
-  border: 1px solid black; /* TODO: border for Debug, remove when done*/
   /* Changes background color of the first list item (step-title) to blue*/
   /* Changes the backgrpundcolor of 3rd list item (step 02) to same as page background*/
   /* Changes the backgroundcolor of the 5th list item (step 04) to red*/
@@ -309,6 +307,10 @@
   background-color: #f17949;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #e9e9e9;
   font-family: "Fira Sans", sans-serif;
@@ -325,8 +327,60 @@ body {
     margin: 0 auto;
     position: relative;
   }
+  /* || header, additional styling for when in desktop mode*/
+  .page-header {
+    flex-direction: row;
+  }
+  .header-content,
+.header-sides {
+    flex: 1 1 50%;
+  }
+  .header-content {
+    padding-left: 8em;
+    padding-top: 4em;
+  }
+  .header-title {
+    font-size: 3rem;
+  }
+  .header-image {
+    max-width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+  }
+  .header-text {
+    width: 60%;
+  }
+  .nav-list {
+    justify-content: center;
+  }
+  .list-item {
+    flex: 0 1 15%;
+  }
+  /* || main, additional styling for when in desktop mode */
+  .page-content-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8em 10em 18em 10em;
+  }
   .page-content-main .join-btn {
     display: inline-block;
+  }
+  .main-title {
+    font-size: 4rem;
+  }
+  .content-title-btn-wrapper,
+.main-text {
+    flex: 1 1 50%;
+  }
+  .product-wrapper {
+    flex: 1 1 100%;
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+  }
+  .page-content-about {
+    padding-top: 15em;
   }
   .about-text {
     width: 50%;

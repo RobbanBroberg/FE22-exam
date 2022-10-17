@@ -12,6 +12,10 @@
 
 @use "components/product-card";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background-clr;
   font-family: $font-text;
@@ -29,12 +33,66 @@ body {
     position: relative;
   }
 
+  /* || header, additional styling for when in desktop mode*/
+  .page-header {
+    flex-direction: row;
+  }
+  .header-content,
+  .header-sides {
+    flex: 1 1 50%;
+  }
+  .header-content {
+    padding-left: 8em;
+    padding-top: 4em;
+  }
+  .header-title {
+    font-size: 3rem;
+  }
+  .header-image {
+    max-width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+  }
+  .header-text {
+    width: 60%;
+  }
+
+  .nav-list {
+    // display: flex;
+    justify-content: center;
+  }
+  .list-item {
+    flex: 0 1 15%;
+  }
+  /* || main, additional styling for when in desktop mode */
+
   .page-content-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8em 10em 18em 10em;
     .join-btn {
       display: inline-block;
     }
   }
+  .main-title {
+    font-size: 4rem;
+  }
 
+  .content-title-btn-wrapper,
+  .main-text {
+    flex: 1 1 50%;
+  }
+
+  .product-wrapper {
+    flex: 1 1 100%;
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+  }
+  .page-content-about {
+    padding-top: 15em;
+  }
   .about-text {
     width: 50%;
     margin: 0 auto;
