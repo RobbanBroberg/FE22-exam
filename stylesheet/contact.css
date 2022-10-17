@@ -115,17 +115,17 @@
 }
 .contact-page__main .contact-page__textarea::-moz-placeholder {
   font-family: "Fira Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
 }
 .contact-page__main .contact-page__textarea:-ms-input-placeholder {
   font-family: "Fira Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
 }
 .contact-page__main .contact-page__textarea::placeholder {
   font-family: "Fira Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
 }
 .contact-page__main .contact-page__label {
@@ -146,14 +146,14 @@
 }
 
 .contact-page__address-container {
-  margin-top: -8.5em;
+  margin-top: -6.5em;
   width: 80%;
   z-index: 20;
   background-color: #fab131;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 2em 6em 2em;
+  padding: 1em 1em 2em 1em;
 }
 
 .contact-page__h3 {
@@ -184,7 +184,7 @@ body {
   height: 100vh;
   background-color: #303031;
   font-family: "Fira Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 body a:link {
@@ -260,6 +260,7 @@ body a:visited {
     position: absolute;
     margin-left: 5em;
     margin-top: -46em;
+    padding: 3em 1em 3em 1em;
   }
   .contact-page__h3 {
     padding-bottom: 0.2em;
