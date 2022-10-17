@@ -58,6 +58,13 @@ body {
     width: 60%;
   }
 
+  .nav-list {
+    // display: flex;
+    justify-content: center;
+  }
+  .list-item {
+    flex: 0 1 15%;
+  }
   /* || main, additional styling for when in desktop mode */
 
   .page-content-main {
