@@ -19,14 +19,18 @@
     padding: 2em 2em;
     flex: 1 0 100px;
     background-color: $nav-background-clr;
+
+    &:hover {
+        background-color: $greycard-clr;
+
+        .contact-page__list-link {
+        color: $active-txt-clr;
+      }
+    }
   }
 
   .contact-page__list-link {
     color: #808080;
-  }
-
-  .contact-page__list-item:hover {
-    background-color: $greycard-clr;
   }
 
   .active {
@@ -36,5 +40,6 @@
 
   .active--link {
     color: $active-txt-clr;
+
   }
 }
