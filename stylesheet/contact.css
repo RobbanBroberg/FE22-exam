@@ -42,7 +42,9 @@
   padding: 2em 2em;
   flex: 1 0 100px;
   background-color: #ececec;
-  color: #979696;
+}
+.contact-page__nav-container .contact-page__list-link {
+  color: #808080;
 }
 .contact-page__nav-container .contact-page__list-item:hover {
   background-color: #a9a19e;
@@ -187,11 +189,9 @@ body {
 }
 body a:link {
   text-decoration: none;
-  color: #979696;
 }
 body a:visited {
   text-decoration: none;
-  color: #808080;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,6 +226,9 @@ body a:visited {
     flex: 0 1 10%;
     margin-left: -15em;
     margin-right: -15em;
+  }
+  .contact-page__list-link {
+    color: #808080;
   }
   .contact-page__main {
     margin: 0 auto;

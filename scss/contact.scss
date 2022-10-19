@@ -17,12 +17,10 @@ body {
 
   a:link {
     text-decoration: none;
-    color: #979696;
   }
 
   a:visited {
     text-decoration: none;
-    color: #808080;
   }
 }
 
@@ -50,11 +48,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ececec;
+    background-color: $nav-background-clr;
   }
 
   .contact-page__list-item:nth-child(4) {
-    background-color: #ececec;
+    background-color: $nav-background-clr;
   }
 
   .contact-page__list-item:nth-child(1),
@@ -64,6 +62,10 @@ body {
     flex: 0 1 10%;
     margin-left: -15em;
     margin-right: -15em;
+  }
+
+  .contact-page__list-link {
+    color: #808080;
   }
 
   .contact-page__main {

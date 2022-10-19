@@ -18,8 +18,11 @@
   .contact-page__list-item {
     padding: 2em 2em;
     flex: 1 0 100px;
-    background-color: #ececec;
-    color: #979696;
+    background-color: $nav-background-clr;
+  }
+
+  .contact-page__list-link {
+    color: #808080;
   }
 
   .contact-page__list-item:hover {
@@ -27,11 +30,11 @@
   }
 
   .active {
-    color: #383838;
-    background-color: #dddbdb;
+    color: $active-txt-clr;
+    background-color: $active-background-clr;
   }
 
   .active--link {
-    color: #383838;
+    color: $active-txt-clr;
   }
 }
