@@ -5,7 +5,7 @@
 }
 .contact-page__header .contact-page__figure-container {
   width: 100%;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.35em;
   display: flex;
   align-items: center;
   background-color: #c7ddea;
@@ -22,7 +22,7 @@
 .contact-page__header .contact-page__figure img {
   position: relative;
   right: 2em;
-  width: 94%;
+  width: 98%;
 }
 
 .contact-page__nav-container {
