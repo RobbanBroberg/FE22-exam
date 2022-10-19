@@ -17,7 +17,7 @@
 .header-text {
   line-height: 1.5em;
   font-weight: 600;
-  color: #4c4c4d;
+  color: #383838;
   margin-bottom: 3em;
 }
 
@@ -94,7 +94,7 @@
   background-color: #a9a19e;
 }
 .list-item:hover .list-link {
-  color: #202020;
+  color: #383838;
 }
 
 .list-link {
@@ -105,7 +105,7 @@
 }
 
 .link-active {
-  color: #202020;
+  color: #383838;
 }
 
 /* Styling of the main content of the page */
@@ -177,7 +177,7 @@
 }
 
 .steps-title {
-  color: #4c4c4d;
+  color: #383838;
   margin: 0;
 }
 
@@ -204,7 +204,7 @@
   line-height: 4em;
   text-align: center;
   text-decoration: none;
-  color: #4c4c4d;
+  color: #383838;
   position: relative;
 }
 .footer-nav-link::before {
@@ -313,7 +313,7 @@ body {
   background-color: #e9e9e9;
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
-  color: #4c4c4d;
+  color: #383838;
 }
 
 @media screen and (min-width: 768px) {
