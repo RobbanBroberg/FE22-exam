@@ -28,7 +28,7 @@ body {
   .page-nav,
   .page-wrapper,
   .page-footer {
-    width: 70%;
+    max-width: 1366px;
     margin: 0 auto;
     position: relative;
   }
@@ -70,7 +70,9 @@ body {
   .page-content-main {
     display: flex;
     flex-wrap: wrap;
-    padding: 8em 10em 18em 10em;
+    align-items: center;
+    gap: 2em;
+    padding: 8em 10em 4em 10em;
     .join-btn {
       display: inline-block;
     }
@@ -81,20 +83,35 @@ body {
 
   .content-title-btn-wrapper,
   .main-text {
-    flex: 1 1 50%;
+    flex: 1 1 45%;
+  }
+  .steps-counter {
+    padding-bottom: 3em;
+  }
+  .steps-item {
+    padding-bottom: 10em;
   }
 
   .product-wrapper {
     flex: 1 1 100%;
+  }
+
+  .about-text {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-wrapper {
     position: absolute;
     bottom: -30%;
     left: 5%;
   }
+  .page-content-main {
+    padding-bottom: 15em;
+  }
   .page-content-about {
     padding-top: 15em;
-  }
-  .about-text {
-    width: 50%;
-    margin: 0 auto;
   }
 }
