@@ -88,7 +88,6 @@
 .list-item {
   flex: 1 1 40%;
   text-align: center;
-  transition: all ease-in-out 200ms;
 }
 
 .list-link {
@@ -96,6 +95,7 @@
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
   color: #a9a19e;
+  transition: all ease-in-out 200ms;
   display: block;
   width: 100%;
   line-height: 4em;
