@@ -10,7 +10,6 @@
 }
 
 .contact-page__address-container {
-  margin-top: -6.5em;
   position: absolute;
   width: 80%;
   z-index: 20;
@@ -34,13 +33,11 @@
 .contact-page__footer-figure {
   width: 100%;
   position: absolute;
-  margin-top: 0;
   display: flex;
 }
 
 .contact-page__footer img {
   border-top: 2px solid white ;
   position: absolute;
-  margin-top: -8em;
   width: 100%;
 }
