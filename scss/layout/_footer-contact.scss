@@ -2,6 +2,7 @@
 
 .contact-page__footer {
   color: white;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,10 +32,12 @@
 
 .contact-page__footer-figure {
   width: 100%;
+  position: absolute;
   display: flex;
 }
 
 .contact-page__footer img {
   border-top: 2px solid white ;
+  position: absolute;
   width: 100%;
 }
