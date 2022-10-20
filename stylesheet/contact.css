@@ -42,6 +42,7 @@
   padding: 2em 2em;
   flex: 1 0 100px;
   background-color: #ececec;
+  transition: all ease-in-out 200ms;
 }
 .contact-page__nav-container .contact-page__list-item:hover {
   background-color: #a9a19e;

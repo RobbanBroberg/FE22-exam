@@ -89,6 +89,7 @@
 .list-item {
   flex: 1 1 40%;
   text-align: center;
+  transition: all ease-in-out 200ms;
 }
 .list-item:hover {
   background-color: #a9a19e;

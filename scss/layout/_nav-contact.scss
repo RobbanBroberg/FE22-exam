@@ -2,10 +2,9 @@
 
 .contact-page__nav-container {
   width: 100%;
-  margin-top: -.5em;
+  margin-top: -0.5em;
   display: flex;
   text-align: center;
-
 
   .contact-page__nav-list {
     width: 100%;
@@ -20,10 +19,12 @@
     flex: 1 0 100px;
     background-color: $nav-background-clr;
 
-    &:hover {
-        background-color: $greycard-clr;
+    transition: all ease-in-out 200ms;
 
-        .contact-page__list-link {
+    &:hover {
+      background-color: $greycard-clr;
+
+      .contact-page__list-link {
         color: $active-txt-clr;
       }
     }
@@ -40,6 +41,5 @@
 
   .active--link {
     color: $active-txt-clr;
-
   }
 }

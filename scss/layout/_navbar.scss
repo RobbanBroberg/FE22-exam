@@ -19,6 +19,9 @@
 .list-item {
   flex: 1 1 40%;
   text-align: center;
+
+  transition: all ease-in-out 200ms;
+
   &:hover {
     background-color: $greycard-clr;
     .list-link {
