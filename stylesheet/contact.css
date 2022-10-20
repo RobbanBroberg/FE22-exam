@@ -40,7 +40,7 @@
 }
 .contact-page__nav-container .contact-page__list-item {
   padding: 0.5em 1em;
-  flex: 1 0 100px;
+  flex: 1 1 30%;
   background-color: #ececec;
   transition: all ease-in-out 200ms;
 }
@@ -88,7 +88,7 @@
 
 .contact-page__main {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   background-color: #a9a19e;
@@ -161,7 +161,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em 1em 2em 1em;
+  padding: 1em 1em 7em 1em;
 }
 
 .contact-page__h3 {
@@ -183,7 +183,7 @@
 .contact-page__footer img {
   border-top: 2px solid white;
   position: absolute;
-  margin-top: -6.7em;
+  margin-top: -8em;
   width: 100%;
 }
 
