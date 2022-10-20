@@ -15,7 +15,7 @@
   }
 
   .contact-page__list-item {
-    padding: 2em 2em;
+    padding: 0.5em 1em;
     flex: 1 0 100px;
     background-color: $nav-background-clr;
 
@@ -31,6 +31,9 @@
   }
 
   .contact-page__list-link {
+    display: block;
+    width: 100%;
+    line-height: 4em;
     color: #808080;
   }
 

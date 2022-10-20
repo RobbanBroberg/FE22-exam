@@ -39,7 +39,7 @@
   list-style: none;
 }
 .contact-page__nav-container .contact-page__list-item {
-  padding: 2em 2em;
+  padding: 0.5em 1em;
   flex: 1 0 100px;
   background-color: #ececec;
   transition: all ease-in-out 200ms;
@@ -51,6 +51,9 @@
   color: #383838;
 }
 .contact-page__nav-container .contact-page__list-link {
+  display: block;
+  width: 100%;
+  line-height: 4em;
   color: #808080;
 }
 .contact-page__nav-container .active {
@@ -218,6 +221,7 @@ body a:visited {
     align-items: center;
     justify-content: center;
     background-color: #ececec;
+    text-align: center;
   }
   .contact-page__list-item:nth-child(4) {
     background-color: #ececec;
@@ -226,7 +230,8 @@ body a:visited {
 .contact-page__list-item:nth-child(2),
 .contact-page__list-item:nth-child(3),
 .contact-page__list-item:nth-child(4) {
-    flex: 0 1 10%;
+    flex: 0 1 16.5%;
+    padding: 0;
     margin-left: -15em;
     margin-right: -15em;
   }

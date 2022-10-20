@@ -49,6 +49,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: $nav-background-clr;
+    text-align: center;
   }
 
   .contact-page__list-item:nth-child(4) {
@@ -59,7 +60,8 @@ body {
   .contact-page__list-item:nth-child(2),
   .contact-page__list-item:nth-child(3),
   .contact-page__list-item:nth-child(4) {
-    flex: 0 1 10%;
+    flex: 0 1 16.5%;
+    padding: 0;
     margin-left: -15em;
     margin-right: -15em;
   }
